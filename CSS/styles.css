@@ -1,78 +1,151 @@
+  /* Seletor universal */
+  * {
+    margin: 0;
+    padding: 0;
+}
+/* Seletor de tipo, aplicando em uma tag */
+p{
+    color: rgb(118, 241, 10);
+}
 
-        /* Seletor universal*/
-        *{
-            margin: 0;
-        }
-        /* Seletor de tipo, aplicando uma tag especifica*/
-        p{
-            color:rgb(10, 246, 116);
-        }
+/* Seletor de classe */
+.paragrafo{
+    background-color: chocolate;
+    /* margin: 10px; - Aplica em todas as margens*/
+    /* margin: 10px 40px; - Aplica nas margens 'Laterais' e 'superior e inferior' */
+    /*margin: 10px 20px 30px 40px;aplica margem  top, right, bottom, left*/
+    /* margin-left: 10px; */
+    /* alinha elementos ao centro */
+    text-align: center;
+}
 
-        /* seletor de classe */
-        .paragrafo{
-            background-color: rgb(198, 104, 37);
-            /* margin: 10px 40px;  aplica em todas as margens*/
-            /* margin: 10px 40px;  aplica as margens laterais e superior e inferior*/
-            /*margin: 10px 20px 30px 40px;  aplica margem top, right, bottom, left*/
-            margin-left: 10px;
-            text-align: center;
-        }
-
-        .imagem{
-            width: 150px;
-            height: 100px;
-        }
-
+.imagem {
+    width: 150px;
+    height: 100px;
+}
 body{
-    background-color: aquamarine;
+/* background-color: aquamarine; */
 }
 
 .tabela{
-    /*remover espaços entre as bordas*/
-    border-collapse: collapse;
-    width: 100%;
+/* remover os espaços entre as bordas */
+border-collapse: collapse;
+width: 100%;
 }
 .cabecalho, .celula{
-    /*configura o formato da borda
-    espessura, tipo e cor*/
-    border: 2px solid #2d2828;
-
-    /*define o espaçamento interno*/
-    padding: 10px;
-    text-align: left;
-    color: black;
-
+/* configura o formato da borda
+Expessura, tipo e cor */
+border: 2px solid #4a3f3f;
+/* define o espamento interno */
+padding: 10px;
+text-align: left;
+color: black;
 }
-.cabecalho2{
-    background-color: rgb(105, 186, 237);
-} 
+.th-cabecalho2{
+background-color: #52b7f1;
+}
 .cabecalho3{
-    background-color: rgb(222, 137, 80);
-}   
-
-.tabelaexe06{
-    border-collapse: collapse;
-    width:100%;
-    text-align: center;
-    border: 2px;
+background-color: #f16252;
 }
-.cabecalhoexe06, .celulaexe06{
-    border: 2px solid black;
-    padding: 10px;
+
+.titulo{
+text-align: center;
+background-color: #e4ad06;
+color: white;
+}
+.alinhar{
+text-align: center;
+}
+.tabel{
+width: 80%;
+margin: 0 auto;
+}
+.th-brasileiro{
+
+background-color: #666666;
+}
+
+.linha-br{
+background-color: #36f40be7;
+}
+
+.linha-br2{
+background-color: #dbf20ee7;
+}
+.formulario{
+    background-color: cornflowerblue;
+}
+label{
+    background-color: #666666;
+}
+.input-nome{
+    /*remove a borda do elemento*/
+    border: none;
+    border-radius: 5px;
+    margin-left: 50px;
+
+    /*define a opacidade do elemento*/
+    opacity: 70%;
+}
+.botao{
+    background-color: aquamarine;
+    border: none;
+    border-radius: 5px;
+    padding: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    
+    /*aplica sombra no texto posiçaõ x,y, blur eo rgba que aplica com opacidade*/
+    text-shadow: 5px 1px 4px rgba(138, 92, 17, 0.9)
     
 }
-.vitorias{
-    background-color: rgb(113, 217, 113);
+.checar{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+
+    /*modifica o tipo de cursor*/
+    cursor: pointer;
+
+    /*zerar as configurações de aparencia*/
+    appearance: none;
+    background-color: #fff;
+    border: 2px solid #4caf50;
+    border-radius: 5px;
 }
-.derrotas{
-    background-color: rgb(231, 69, 69);
+.checar:checked{
+    background-color: #4caf50;
 }
-.empates{
-    background-color: rgb(215, 231, 39);
+.email{
+    width: 300px;
+    padding: 5px 5px;
+    margin-left: 5px;
+    border: 2px solid #fff;
 }
-.g4{
-    background-color: rgb(107, 126, 210);
+.selecao{
+    appearance: none;
+    width: 300px;
+    padding: 4px;
+    font-size: 16px;
+    color: #4a3f3f;
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+
+    /*sombra dentro do input*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);   
 }
-.g6{
-    background-color: rgb(236, 190, 74);
+.radio{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #f16252;
+    border-radius: 50%;
+    cursor: pointer;
+}
+/*pseudoclasse, quando o estado do objeto muda, ele atribui outras propriedades*/
+.radio:checked{
+    background-color: #f16252;
+    border-color: red;
 }
