@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+    /* garante que padding e margin sejam incluidos nas dimensoes totais do elemento*/
+    box-sizing: border-box;
+}
+body{
+    background-color:#211f1f;
+    font-family: 'Teko', sans-serif;
+    color: #e1d8d8;
+}
+.logo{
+    font-family: Teko;
+    font-size: 2rem;
+    background-color: rgb(0, 0, 0);
+}
+.cabecalho{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    opacity: 70%;
+    color: #e1d8d8;   
+    justify-content: center;
+    flex-direction: row;
+    height: 70px;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    margin-left: 100px;
+    background-color: rgb(0, 0, 0);
+}
+ul > a{
+    text-decoration: none;
+    color: #e1d8d8;
+    opacity: 70%;
+    background-color: rgb(0, 0, 0);
+}
+.acessar{
+    display: flex;
+    justify-content:right;
+    text-decoration: none;
+    color: #e1d8d8;
+    background-color: black;
+    gap: 100px;
+    opacity: 70%;
+}
+.banner-cafe{
+    max-width: 1120px;
+    margin: auto;
+    transition: transform 2s ease;
+}
+.banner-cafe:hover{
+   
+    transform: scale(1.020);
+    box-shadow:  10px 0px 20px rgba(113, 101, 101, 0.5);
+}
+.banner-cafe > img{
+    width: 100%;
+    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    opacity: 0.7;
+}
+.banner-novidades{
+    max-width: 1120px;
+    height: 60vh;
+    margin: auto;
+    padding: 0rem 2rem;
+    gap: 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+hr{
+    border: 1px solid #873434;
+}
+.banner-conteudo{
+    /* organizamos o conteudo em coluna*/
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.banner-imagens{
+    /* Definir largura máxima */
+    max-width: 45%;
+    /* Exibir as imagens me 4 colunas */
+    column-count: 4;
+
+}
+.banner-imagens > figure > img{
+    width: 100%;
+    border-radius: 5px;
+}
+.banner-imagens > figure > img:hover{
+    transform: scale(1.040);
+    box-shadow:  10px 0px 20px rgba(113, 101, 101, 0.5);
+}
+/* Criando scrool para cards*/
+.card-novo{
+    display: flex;
+    overflow: scroll;
+    gap: 3rem;
+    margin: auto;
+    max-width: 1120px;
+}
+
+/* Removendo a barra de scrool */
+.card-novo::-webkit-scrollbar{
+    display: none;
+}
+.receitas{
+    /* organizando em colunas */
+    display: flex;
+    flex-direction: column;
+    max-width: 1120px;
+    padding: 2.5rem 2rem;
+    margin:auto
+}
+
+.card{
+    margin-left: 40px;   
+    border-radius: 10px;
+    border: 1px solid #777474;
+    box-shadow: 5px 0px 10px  rgba(255, 255, 255, 0.5);
+    max-width: 260px;
+}
+
+.cabecalho-card{
+    background-color: #534743;
+    padding: 7px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.conteudo-card{
+
+}
+
+.rodapé-card{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #534743;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+button{
+    width: 80px;
+    background-color: #483d3d;
+    color: rgb(223, 240, 254);
+    border-radius: 8px;
+    padding: 4px;
+}
+
+
+/* MAPA */
+.mapa{
+   max-width: 1120px;
+   width: 600px;
+   height: 400px;
+
+   /* aplicando uma imagem como fundo na div*/
+    background-image: url('../img/mapa.png');
+    background-repeat: no-repeat;
+    /* aplica tamanho da imagem em todo o espaço */
+    background-size: cover;
+    margin: 20px;
+    position: relative;
+}
+.icone{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #ff6347;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.icone1{
+    top: 40px;
+    left: 100px;
+}
+.icone2{
+    top: 100px;
+    left: 220px;
+}
+
+/* Criando um elemento que não irá aparecer na tela */
+.div-hover{
+    /* escondendo elemento*/
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 500px;
+    height: 400px;
+}
+.icone:hover .div-hover{
+    /* exibindo elemento */
+    display: block;
+    position: absolute;
+    top: 15%;
+    left: 37%;
+}
