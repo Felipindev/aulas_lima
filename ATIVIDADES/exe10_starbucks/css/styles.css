@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+}
+.topo{
+    background-color: rgb(230, 208, 208);
+    text-align: right;
+    gap: 10px;
+    margin-left: auto;
+    display: flex;
+    align-items: flex-end;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: space-between;
+}
+.parte1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+}
+.parte2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+    margin-right: 10px;
+}
+.img_copo{
+    max-width: 100%;
+}
+.img{
+    width: 150px;
+    height: 100px;
+    align-items: flex-start;
+}
+.img2{
+    width: 100px;
+    height: 100px;
+    align-items: end;
+}
+.img3{
+    width: 30px;
+    height: 30px;
+}
+a{
+    text-decoration: none;
+    color: rgb(25, 26, 26);
+}
+.banner{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+.bloco1{
+    background-color: rgb(126, 181, 126);
+    display: flex;
+    max-height: 400px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
