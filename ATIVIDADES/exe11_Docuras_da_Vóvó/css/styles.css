@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.carousel-item img{
+    object-fit: fill;
+    height: 550px;
+}
+.logo{
+    width: 70px;
+    object-fit: cover;
+}

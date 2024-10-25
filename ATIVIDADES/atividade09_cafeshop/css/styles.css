@@ -212,3 +212,32 @@ button{
     top: 15%;
     left: 37%;
 }
+
+/*estilização melhores avaliados*/
+
+.container-galeria{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    background-color: #483d3d;
+}
+
+.item-galeria{
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: rgb(40, 49, 49);
+}
+.item-galeria img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease;
+    opacity: 80%;
+}
+
+.item-galeria img:hover{
+    transform: scale(1.1);
+}
