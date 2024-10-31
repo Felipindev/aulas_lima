@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inscrição</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- ícones do bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+</head>
+<body>
+<!-- banner -->
+<div class="banner-container">
+    <div class="banner">
+      <img src="./img/banner.png" alt="Banner do evento" />
+    </div>
+  </div>
+
+  <section class="container mt-4">
+    <h2 class="text-center mb-4">Formulário de inscrição</h2>
+
+    <!-- formulario -->
+
+    <section class="container bg-body-tertiary">
+        
+        <form action="" class="form-container">
+            <div class="form-group">
+                <label for="nome" class="form-label">Nome</label>
+                <input class="form-control" type="text" id="nome" name="nome" required placeholder="digite seu nome">
+            </div>
+            <div class="form-group">
+                <label for="nome" class="form-label">Email</label>
+                <input class="form-control" type="email" id="email" name="email" required placeholder="digite seu email">
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label">Telefone</label>
+                <input class="form-control" type="tel" required placeholder="digite seu telefone">
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="">escolha seu evento</label>
+                <select class="form-select" name="evento" id="evento">
+                    <option value="" disabled selected>Selecione um evento</option>
+                    <option value="palestras">FUTURECOM 2024</option>
+                    <option value="network">UPlab 2024</option>
+                    <option value="workshop">Curso Técnico SENAI</option>
+
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="">Mensagem</label>
+                <textarea class="form-control" name="" id="" cols="30" rows="0"></textarea>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-danger">Enviar Inscrição</button>
+            </div>
+        </form>
+    </section>
+
+      <section class="bg-light p-5 text-center">
+        <h2>Retorne aqui 👇</h2>
+        <a href="./index.html" class="btn btn-success mt-3">RETORNAR</a>
+      </section>
+  
+      <footer class="bg-dark text-white text-center p-3">
+        <p>&copy; TechEdu - TODOS OS DIREITOS RESERVADOS - SESI/SENAI</p>
+      </footer>
+
+    <!-- javaScript  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>

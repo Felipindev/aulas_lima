@@ -4,9 +4,7 @@
     padding: 0;
 }
 /* Seletor de tipo, aplicando em uma tag */
-p{
-    color: rgb(118, 241, 10);
-}
+
 
 /* Seletor de classe */
 .paragrafo{
@@ -23,9 +21,7 @@ p{
     width: 150px;
     height: 100px;
 }
-body{
-/* background-color: aquamarine; */
-}
+
 
 .tabela{
 /* remover os espaços entre as bordas */
@@ -154,4 +150,9 @@ label{
     height: 380px;
     margin: 0 auto;
     background-color: rgb(255, 255, 255);
+}
+.card > img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
 }
