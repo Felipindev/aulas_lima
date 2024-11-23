@@ -33,6 +33,7 @@ function dark() {
 
     const preto = `rgb(0,0,0)`
     document.body.style.backgroundColor = preto
+    document.body.style.color = "white"
 }
 
 function white() {
@@ -42,4 +43,5 @@ function white() {
 
     const branco = `rgb(255,255,255)`
     document.body.style.backgroundColor = branco
+    document.body.style.color = "black"
 }
